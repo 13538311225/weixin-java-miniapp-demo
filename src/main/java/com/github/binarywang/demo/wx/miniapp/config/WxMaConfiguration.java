@@ -65,7 +65,7 @@ public class WxMaConfiguration {
         maServices = configs.stream()
             .map(a -> {
                 WxMaDefaultConfigImpl config = new WxMaDefaultConfigImpl();
-//                WxMaDefaultConfigImpl config = new WxMaRedisConfigImpl(new JedisPool());
+//   1             WxMaDefaultConfigImpl config = new WxMaRedisConfigImpl(new JedisPool());
                 config.setAppid(a.getAppid());
                 config.setSecret(a.getSecret());
                 config.setToken(a.getToken());
